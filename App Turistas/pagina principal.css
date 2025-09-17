@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #0077b6;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h2 {
+  color: #0077b6;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea,
+button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label.button {
+  display: inline-block;
+  background-color: #0077b6;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.lugar {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.lugar img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+.frases {
+  background-color: #e0f7fa;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.resultado {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #0077b6;
+  color: white;
+  margin-top: 30px;
+}
+
+/* Lógica de mostrar y ocultar usando checkbox */
+#loginToggle {
+  display: none;
+}
+
+#loginToggle:not(:checked) ~ #mainPage {
+  display: none;
+}
+
+#loginToggle:checked ~ #loginPage {
+  display: none;
+}
+
+#loginToggle:checked ~ #mainPage {
+  display: block;
+}

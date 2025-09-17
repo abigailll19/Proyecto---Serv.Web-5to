@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Manta Travel App</title>
+  <link rel="stylesheet" href="pagina principal.css">
+</head>
+<body>
+
+  <!-- Check oculto para cambiar entre login y app -->
+  <input type="checkbox" id="loginToggle" class="hidden" />
+
+  <!-- LOGIN PAGE -->
+  <div class="container" id="loginPage">
+    <header>
+      <h1>Manta Travel App</h1>
+      <p>Recomendaciones para turistas internacionales</p>
+    </header>
+
+    <h2>Iniciar Sesión o Registrarse</h2>
+    <input type="email" placeholder="Correo electrónico">
+    <input type="password" placeholder="Contraseña">
+
+    <!-- Botón de login simulado -->
+    <label for="loginToggle" class="button">Iniciar Sesión</label>
+
+    <button>Registrarse</button>
+
+    <label for="idioma">Selecciona tu idioma:</label>
+    <select id="idioma">
+      <option>Español</option>
+      <option>English</option>
+      <option>Français</option>
+      <option>Deutsch</option>
+    </select>
+  </div>
+
+  <!-- MAIN PAGE -->
+  <div class="container" id="mainPage">
+    <header>
+      <h1>Manta Travel App</h1>
+      <p>Explora lo mejor de Manta</p>
+    </header>
+
+    <h2>Buscar lugares</h2>
+    <input type="text" id="busqueda" placeholder="Buscar restaurantes, museos, hoteles...">
+    <div id="resultados"></div>
+
+    <label for="filtros">Filtrar por:</label>
+    <select id="filtros">
+      <option>Tipo</option>
+      <option>Precio</option>
+      <option>Distancia</option>
+      <option>Horario</option>
+      <option>Accesibilidad</option>
+    </select>
+
+    <hr>
+
+    <h2>Lugares recomendados</h2>
+
+    <div class="lugar">
+      <h3>Playa El Murciélago</h3>
+      <p>Ideal para disfrutar del sol y la gastronomía local.</p>
+      <p><strong>Precio:</strong> Gratis</p>
+      <textarea placeholder="Escribe una reseña..."></textarea>
+      <button>Publicar reseña</button>
+    </div>
+
+    <div class="lugar">
+      <h3>Mercado Central de Mariscos</h3>
+      <p>Pescado fresco y platos típicos como ceviche y encebollado.</p>
+      <p><strong>Precio:</strong> $ - $$</p>
+      <textarea placeholder="Escribe una reseña..."></textarea>
+      <button>Publicar reseña</button>
+    </div>
+
+    <hr>
+
+    <h2>Frases útiles en español</h2>
+    <div class="frases">
+      <p>👋 Hola = Hello</p>
+      <p>📍 ¿Dónde está...? = Where is...?</p>
+      <p>🧾 La cuenta, por favor = The check, please</p>
+      <p>🙏 Gracias = Thank you</p>
+    </div>
+
+    <h2>Normas culturales</h2>
+    <ul>
+      <li>Saludar con cortesía es muy valorado.</li>
+      <li>Los horarios pueden ser flexibles.</li>
+      <li>No se exige propina, pero es bienvenida.</li>
+    </ul>
+
+    <!-- Botón de logout que vuelve al login -->
+    <label for="loginToggle" class="button">Cerrar sesión</label>
+  </div>
+
+  <footer>
+    © 2025 Manta Travel App - Proyecto estudiantil
+  </footer>
+
+  <script src="pagina principal.js"></script>
+</body>
+</html>
