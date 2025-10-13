@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    // Entrada y salida
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    // Configuración de entorno
+    "module": "commonjs",
+    "target": "es2020",
+    "lib": ["esnext"],
+    "types": ["node"],
+
+    // Necesario para TypeORM (decoradores)
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // Salida de información útil
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // Opciones de tipado estricto
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+    // Módulos y sintaxis
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+
+    // Performance / limpieza
+    "skipLibCheck": true
+  },
+  "include": ["src"]
+}
